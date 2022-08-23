@@ -4,8 +4,11 @@ pip install kivymd
 pip install buildozer
 pip install Cython
 
-For APK with KivyMD
+
+For APK with KivyMD:
+
 buildozer init
+
 some changes in file "buildozer.spec":
 *
   # (list) Application requirements
@@ -25,3 +28,7 @@ some changes in file "buildozer.spec":
 *
   # Kivy version to use
   osx.kivy_version = 2.0.0   ## current version
+
+buildozer -v android debug
+
+after your apk will appear in bin
